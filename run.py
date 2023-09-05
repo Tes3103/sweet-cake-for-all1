@@ -16,6 +16,8 @@ SHEET = GSPREAD_CLIENT.open('sweet_cake_for_all1')
 def get_sales_data():
     """
      Get user input figures from the daily sales data
+     a while loop will run until it get the valid data figure from the user
+     which is a string separated by comma,
     """
     while True:
         print("please enter sales data from from the last market day.")
@@ -29,6 +31,8 @@ def get_sales_data():
         if validate_data(sales_data):
             print("Data is valid!")
             break
+        
+    return sales_data
 
 
 def validate_data(values):
@@ -50,5 +54,5 @@ def validate_data(values):
     return True
 
 
-get_sales_data()   
-
+data = get_sales_data()   
+print(data)
