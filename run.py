@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -20,7 +21,7 @@ def get_sales_data():
      which is a string separated by comma,
     """
     while True:
-        print("please enter sales data from from the last market day.")
+        print("please enter sales data from the last market day.")
         print("Data should be six figures, and separated by commas.")
         print("Example:50,55,65,40,34,40\n")
 
@@ -64,6 +65,27 @@ def update_sales_worksheet(data):
     print("Sales worksheet updated succesfully.\n")
 
 
-data = get_sales_data()   
-sales_data = [int(num) for num in data]
-update_sales_worksheet(sales_data)
+def calculate_surplus_data(sales_row):
+    """
+    Compare sales with stock and calculate for each value
+    surplus is the difference of stock and sales
+    positive surplus shows wastage
+    negative surplus showes additional sales
+    """
+    print("Calculating surplus data...\n") 
+    stock = SHEET.worksheet("stock").get_all_values()
+    stock_row = stock[-1]
+    print(stock_row)  
+
+
+def main():
+    """
+    Run all program function
+    """
+    data = get_sales_data()   
+    sales_data = [int(num) for num in data]
+    update_sales_worksheet(sales_data)
+    calculate_surplus_data(sales_data)
+
+print("Welcome to Sweet Cake for all1 Data Automation!")
+main()
