@@ -26,13 +26,13 @@ def get_sales_data():
         print("Example:50,55,65,40,34,40\n")
 
         data_str = input("Please enter your data here: ")
-    
+
         sales_data = data_str.split(",")
 
         if validate_data(sales_data):
             print("Data is valid!")
             break
-        
+
     return sales_data
 
 
@@ -54,7 +54,7 @@ def validate_data(values):
         
     return True
 
-    
+
 def update_worksheet(data, worksheet):
     """
     receives a lsit of integers to be inserted to a worksheet
@@ -85,6 +85,38 @@ def calculate_surplus_data(sales_row):
     return surplus_data
 
 
+def get_last_5_entries_sales():
+    """
+    Collects columens of data from sales worksheet, collecting 
+    the last five entries for each cake and returns the data as 
+    list of lists
+    """
+    sales = SHEET.worksheet("sales")
+    
+    columns = []
+    for ind in range(1, 7):
+        column = sales.col_values(ind)
+        columns.append(column[-5:])
+    
+    return columns
+
+
+def calculate_stock_data(data):
+    """
+    calculate teh average stock for each item type adding 25%
+    """
+    print("Calculating stock data...\n")
+    new_stock_data = []
+
+    for column in data:
+        int_column = [int(num) for num in column]
+        average = sum(int_column)/5 
+        stock_num = average * 2.5
+        new_stock_data.append(round(stock_num))
+
+    return new_stock_data     
+    
+    
 def main():
     """
     Run all program function
@@ -94,7 +126,11 @@ def main():
     update_worksheet(sales_data, "sales")
     new_surplus_data = calculate_surplus_data(sales_data)
     update_worksheet(new_surplus_data, "surplus")
-
+    sales_columns = get_last_5_entries_sales()
+    stock_data = calculate_stock_data(sales_columns)
+    update_worksheet(stock_data, "stock")
+    
 
 print("Welcome to Sweet Cake for all1 Data Automation!")
 main()
+
