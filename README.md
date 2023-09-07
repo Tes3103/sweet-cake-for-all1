@@ -1,32 +1,46 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## CONTENTS
 
-Welcome,
+* [Sweet Cake For All1](#sweet-cake-for-all1)
+* [How To Use](#how-to-use)
+* [Features](#features)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+  * [Existing Features](#existing-features)
+  * [Future Features](#future-features)
+* [Testing](#testing)
+* [Bugs](#bugs)
 
-## Reminders
+  * [Solved Bugs](#solved-bugs)
+  * [Unsolved Bugs](#unsolved-bugs)
+* [Validator](#validator)
+* [Deployment](#deployment)
+* [Credits](#)
+* [](#)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Sweet Cake For All1
+ Sweet Cake For All1 is a data Automation program used for the company called  Sweet Cake For All, It will be used to generate a calculated stock data with the intension of a 25% increase for the next market day by collecting the data from the user from the daily sales and surplus data.
+![Add the picture link]()
 
-## Creating the Heroku app
+## How To Use
+ The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
+  ### Existing Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+* [](#)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+  * [](#)
+  * [](#)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+![Screeen shot picture1]()
 
-Connect your GitHub repository and deploy as normal.
+* [](#)
 
-## Constraints
+  * [](#)
+  * [](#)
+  
+![picture 2]()
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+* [](#)
+ 
 
----
-
-Happy coding!
+  ### Feuture Features
