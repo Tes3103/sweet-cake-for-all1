@@ -29,22 +29,12 @@
 
 ## Features
   ### Existing Features
-
-* [](#)
-
-  * [](#)
-  * [](#)
-
-![Screeen shot picture1]()
-
-* [](#)
-
-  * [](#)
-  * [](#)
-  
-![picture 2]()
-
-* [](#)
- 
-
   ### Feuture Features
+## Testing
+  ### Manual Testing
+  when a user inputs the sales data with a sting, the data automation raise an error Invalid data, and suggestes to inter the correct numerical figure.
+
+  ![] 
+
+
+
