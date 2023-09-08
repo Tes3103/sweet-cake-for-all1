@@ -17,10 +17,14 @@
 * [](#)
 
 ## Sweet Cake For All1
+![responsiveness](documentation/responsive-page.png)
+
  Sweet Cake For All1 is a data Automation program used for the company called  Sweet Cake For All, It will be used to generate a calculated stock data with the intension of a 25% increase for the next market day by collecting the data from the user from the daily sales and surplus data.
-![Add the picture link]()
 
 ## How To Use
+ 
+![flow cahrt for how to use](documentation/flow-chart-of-the-process.png)
+
  The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the 
 
 ## Features
