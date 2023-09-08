@@ -19,7 +19,7 @@
 ## Sweet Cake For All1
 ![responsiveness](documentation/responsive-page.png)
 
- Sweet Cake For All1 is a data Automation program used for the company called  Sweet Cake For All, It will be used to generate a calculated stock data with the intension of a 25% increase for the next market day by collecting the data from the user from the daily sales and surplus data.
+ Sweet Cake For All1 is a data Automation program used for the company called  Sweet Cake For All, It will be used to generate a calculated stock data with the intension of a 25% increase for the next market day by collecting the last five sales data from the user, calculate the surplus by subtracting the sales from the stock and the average will be used to calculate the stock.
 
 ## How To Use
  
@@ -29,12 +29,45 @@
 
 ## Features
   ### Existing Features
+  Currently the data automation startes with a welcome message, advice the user to enter the daily sales data by providing an example, and if the user input is invalid, it will raise a comment to correct accordegly.
+
+   ![Welcoming page](documentation/starting-template.png)
+
   ### Feuture Features
+  For the future, a separate soft ware will be provided for the data input and and use another API between the user and data authomation.
 ## Testing
   ### Manual Testing
   when a user inputs the sales data with a sting, the data automation raise an error Invalid data, and suggestes to inter the correct numerical figure.
 
-  ![] 
+  ![String data input](documentation/wrong-data-input2.png)
 
+  when a user input a sales data with out separating it with a comma, the data automation will raise an error, to correct the input.
 
+  ![data input without a comma](documentation/wrong-data-input1) 
 
+  When the user inputs a sales data with the correct sales data, the data automation will confirm the input is valid and sucessfully update both the sales and surplus worksheet.
+
+  ![Correct sales data input](documentation/correct-data-input1.png)
+ 
+  After sucessfully updating the sales and surplus worksheet the data automation will calcualte the suggested stock for the next market day.
+
+  ![Stock calculation](documentation/correct-data-input2.png)
+
+  ### Validation
+  * PEP8 validator is used to check the python code is without any error.
+
+  ![PEP8 Result](documnetation/pep8-result.png)
+## Bugs
+ ### Solved Bugs
+ ### Remaining Bugs  
+## Deployment
+* steps for deployment
+
+  * Clone sweet cake for all1 repository
+  * Create a new Heroku app  
+  * Set the buildpacks in the exact order of Python then NodeJs
+  * Link the Heroku app to the sweet cake for all1 repository
+  * click to deploy
+## Credits
+1. To my mentor Mr. Rohit for his continous support
+2. For all Code Institute student support team 
