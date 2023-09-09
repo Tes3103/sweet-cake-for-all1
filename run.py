@@ -49,7 +49,7 @@ def validate_data(values):
                 f"6 values are required, you provided {len(values)}"
             )
         for value in values:
-            if value < 0:
+            if int(value) < 0:
                 raise ValueError(
                     f"6 values should be greater than 0")
     except ValueError as e:
@@ -114,9 +114,9 @@ def calculate_stock_data(data):
         average = sum(int_column)/5 
         stock_num = average * 2.5
         new_stock_data.append(round(stock_num))
-    return new_stock_data     
+    return new_stock_data    
     
-    
+
 def main():
     """
     Run all program function
@@ -129,8 +129,11 @@ def main():
     sales_columns = get_last_5_entries_sales()
     stock_data = calculate_stock_data(sales_columns)
     update_worksheet(stock_data, "stock")
-    
+
+
+if __name__ == "__main__":
+    print("Welcome to Sweet Cake for all1 Data Automation!")
+    main()    
       
-print("Welcome to Sweet Cake for all1 Data Automation!")
-main()
+
 
