@@ -2,6 +2,10 @@
 
 * [Sweet Cake For All1](#sweet-cake-for-all1)
 * [How To Use](#how-to-use)
+* [UX](#ux)
+
+  * [Target Audience](#target-audience)
+  * [User Stories](#ueser_stories)
 * [Features](#features)
 
   * [Existing Features](#existing-features)
@@ -17,7 +21,8 @@
 * [](#)
 
 ## Sweet Cake For All1
-![responsiveness](documentation/responsive-page.png)
+
+![Responsiveness](./documentation/responsivepage.png)
 
  Sweet Cake For All1 is a data Automation program used for the company called  Sweet Cake For All, It will be used to generate a calculated stock data with the intension of a 25% increase for the next market day by collecting the last five sales data from the user, calculate the surplus by subtracting the sales from the stock and the average will be used to calculate the stock.
 
@@ -25,7 +30,19 @@
  
 ![flow cahrt for how to use](documentation/flow-chart-of-the-process.png)
 
- The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the 
+ The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the
+
+## UX 
+  ### Target Audience
+  My data automation software is targeted for the Sweet Cake for all cake company, which aims to collect the daily sales data, to calculate and make a stock prediction for the next market.
+  ### User Stories
+  * As a user:
+
+    * I would like to know how to feed the daily sales data
+    * I want to have similar data as an example to feed sales data
+    * I would like to know if my datas are valid
+    * I would like to know when my input are correctly processed 
+    * I would like to have a conformation message if the process went well 
 
 ## Features
   ### Existing Features
