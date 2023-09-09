@@ -48,7 +48,10 @@ def validate_data(values):
             raise ValueError(
                 f"6 values are required, you provided {len(values)}"
             )
-           
+        for value in values:
+            if value < 0:
+                raise ValueError(
+                    f"6 values should be greater than 0")
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
         return False     
@@ -64,6 +67,8 @@ def update_worksheet(data, worksheet):
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f"{worksheet} Work sheet updated successfully!\n")
+    print(f"{worksheet} please click the below link to view the update\n")
+    print(f"{worksheet} https://tinyurl.com/24wwjfce\n")    
 
 
 def calculate_surplus_data(sales_row):
