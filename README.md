@@ -22,13 +22,13 @@
 
 ## Sweet Cake For All1
 
-![Responsiveness](./documentation/responsivepage.png)
+![Responsiveness](documentation/responsivepage.png)
 
  Sweet Cake For All1 is a data Automation program used for the company called  Sweet Cake For All, It will be used to generate a calculated stock data with the intension of a 25% increase for the next market day by collecting the last five sales data from the user, calculate the surplus by subtracting the sales from the stock and the average will be used to calculate the stock.
 
 ## How To Use
  
-![flow cahrt for how to use](documentation/flow-chart-of-the-process.png)
+![flow Chart for how to use](documentation/flowchartoftheprocess.png)
 
  The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the
 
@@ -48,7 +48,7 @@
   ### Existing Features
   Currently the data automation startes with a welcome message, advice the user to enter the daily sales data by providing an example, and if the user input is invalid, it will raise a comment to correct accordegly.
 
-   ![Welcoming page](documentation/starting-template.png)
+   ![Welcoming page](documentation/startingtemple.png)
 
   ### Feuture Features
   For the future, a separate soft ware will be provided for the data input and and use another API between the user and data authomation.
@@ -56,27 +56,30 @@
   ### Manual Testing
   when a user inputs the sales data with a sting, the data automation raise an error Invalid data, and suggestes to inter the correct numerical figure.
 
-  ![String data input](documentation/wrong-data-input2.png)
+  ![String data input](documentation/wrongdatainput2.png)
 
   when a user input a sales data with out separating it with a comma, the data automation will raise an error, to correct the input.
 
-  ![data input without a comma](documentation/wrong-data-input1) 
+  ![data input without a comma](documentation/wrongdatainput 1.png) 
 
   When the user inputs a sales data with the correct sales data, the data automation will confirm the input is valid and sucessfully update both the sales and surplus worksheet.
 
-  ![Correct sales data input](documentation/correct-data-input1.png)
+  ![Correct sales data input](documentation/correctdatainput1.png)
  
   After sucessfully updating the sales and surplus worksheet the data automation will calcualte the suggested stock for the next market day.
 
-  ![Stock calculation](documentation/correct-data-input2.png)
+  ![Stock calculation](documentation/correctdatainput2.png)
 
   ### Validation
   * PEP8 validator is used to check the python code is without any error.
 
-  ![PEP8 Result](documnetation/pep8-result.png)
-## Bugs
+  ![PEP8 Result](documentation/pep8.png)
+## Bugs 
  ### Solved Bugs
- ### Remaining Bugs  
+ * The data input was accepting a negative figure, i fix this issue by putting a forloop in the validate-data function
+ * 
+ ### Remaining Bugs
+ * No Bugs   
 ## Deployment
 * steps for deployment
 
