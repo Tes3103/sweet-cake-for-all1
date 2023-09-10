@@ -39,7 +39,7 @@ def get_sales_data():
 def validate_data(values):
     """
     Inside the try except statement, converts all string values into intgers.
-    if strings cannot be converted into integer,raises value error,or values 
+    if strings cannot be converted into integer,raises value error,or values
     are not exactly 6 positive numbers.
     """
     try:
@@ -54,7 +54,7 @@ def validate_data(values):
                     f"6 values should be greater than 0")
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
-        return False     
+        return False
     return True
 
 
@@ -68,7 +68,7 @@ def update_worksheet(data, worksheet):
     worksheet_to_update.append_row(data)
     print(f"{worksheet} Work sheet updated successfully!\n")
     print(f"{worksheet} please click the below link to view the update\n")
-    print(f"{worksheet} https://tinyurl.com/24wwjfce\n")    
+    print(f"{worksheet} https://tinyurl.com/24wwjfce\n")
 
 
 def calculate_surplus_data(sales_row):
@@ -78,7 +78,7 @@ def calculate_surplus_data(sales_row):
     positive surplus shows wastage
     negative surplus showes additional sales
     """
-    print("Calculating surplus data...\n") 
+    print("Calculating surplus data...\n")
     stock = SHEET.worksheet("stock").get_all_values()
     stock_row = stock[-1]
     surplus_data = []
@@ -90,11 +90,11 @@ def calculate_surplus_data(sales_row):
 
 def get_last_5_entries_sales():
     """
-    Collects columens of data from sales worksheet, collecting 
-    the last five entries for each cake and returns the data as 
+    Collects columens of data from sales worksheet, collecting
+    the last five entries for each cake and returns the data as
     list of lists
     """
-    sales = SHEET.worksheet("sales") 
+    sales = SHEET.worksheet("sales")
     columns = []
     for ind in range(1, 7):
         column = sales.col_values(ind)
@@ -111,17 +111,17 @@ def calculate_stock_data(data):
 
     for column in data:
         int_column = [int(num) for num in column]
-        average = sum(int_column)/5 
+        average = sum(int_column)/5
         stock_num = average * 2.5
         new_stock_data.append(round(stock_num))
-    return new_stock_data    
-    
+    return new_stock_data
+
 
 def main():
     """
     Run all program function
     """
-    data = get_sales_data()   
+    data = get_sales_data()
     sales_data = [int(num) for num in data]
     update_worksheet(sales_data, "sales")
     new_surplus_data = calculate_surplus_data(sales_data)
@@ -133,7 +133,4 @@ def main():
 
 if __name__ == "__main__":
     print("Welcome to Sweet Cake for all1 Data Automation!")
-    main()    
-      
-
-
+    main()
