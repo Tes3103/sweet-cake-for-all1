@@ -68,9 +68,9 @@
 
   ![String data input](documentation/wrongdatainput2.png)
 
-  when a user input a sales data with out separating it with a comma, the data automation will raise an error, to correct the input.
+  when a user input a sales data with out comma, the data automation will raise an error, to correct the input.
 
-  ![data input without a comma](documentation/wrongdatainput 1.png) 
+  ![data input without a comma](documentation/wrongdatainput.png) 
 
   When the user inputs a sales data with the correct sales data, the data automation will confirm the input is valid and sucessfully update both the sales and surplus worksheet.
 
