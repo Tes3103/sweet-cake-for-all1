@@ -32,20 +32,20 @@
  
 ![flow Chart for how to use](documentation/flowchartoftheprocess.png)
 
- The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the
+ The user provide sales data from the daily market,if this data data is valid, it will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, if the difference is a posive number, will indicate the cake which is a wastage,if a negative number, will indicate the additional cake soled for that particular market day.
 
 ## Technologies Used
 * [Python](#https://www.python.org/) - is used to develop the data Automation
 * [Spreedsheets](#https://tinyurl.com/4ju8jju2) - is used to feed all the data
 * [PEP8](#https://pep8ci.herokuapp.com/) - is used to validate the python code
-* [Lucidchart](#https://www.lucidchart.com/pages/how-to-make-a-flowchart) - is used to build a flow chart to show how the overall program is running and used
+* [Lucidchart](#https://www.lucidchart.com/pages/how-to-make-a-flowchart) - is used to build a flow chart for the overall program running.
 * [Codeanywhere](#https://app.codeanywhere.com/)- is used as a local IDE.
 * [Github](#https://github.com/) - used a remote repository.
 * [Heroku](#) is used to deploy the project
 
 ## UX 
   ### Target Audience
-  My data automation software is targeted for the Sweet Cake for all cake company, which aims to collect the daily sales data, to calculate and make a stock prediction for the next market.
+  My data automation software is targeted for the Sweet Cake for all cake company, which aims to collect the daily sales data, calculate the surplus and make a stock prediction for the next market.
   ### User Stories
   * As a user:
 
@@ -61,7 +61,7 @@
    ![Welcoming page](documentation/startingtemple.png)
 
   ### Feuture Features
-  For the future, a separate soft ware will be provided for the data input and and use another API between the user and data authomation.
+  For the feuture, we will create API between the sales data collecting software and our python program.
 ## Testing
   ### Manual Testing
   when a user inputs the sales data with a sting, the data automation raise an error Invalid data, and suggestes to inter the correct numerical figure.
