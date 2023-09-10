@@ -81,7 +81,8 @@
   ![Stock calculation](documentation/correctdatainput2.png)
 
  ### Testing Userstories
-| UserStorues | Results |
+| Userstories | Results |
+|---| ---|
 | I would like to know how to feed the daily sales data| when the user open the data automation, the welcoming message with instraction appear|
 | I would like to know if my datas are valid| if the user input is valid, the data automation will confirm as Data is Valid |
 | I would like to know when my inputs are correctly processed | if the inputes are valid and accepted the data automation will show the worksheet is updated sccessfully and a link to the updated worksheet|
