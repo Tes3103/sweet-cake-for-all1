@@ -40,8 +40,8 @@
 * [PEP8](#https://pep8ci.herokuapp.com/) - is used to validate the python code
 * [Lucidchart](#https://www.lucidchart.com/pages/how-to-make-a-flowchart) - is used to build a flow chart for the overall program running.
 * [Codeanywhere](#https://app.codeanywhere.com/)- is used as a local IDE.
-* [Github](#https://github.com/) - used a remote repository.
-* [Heroku](#) is used to deploy the project
+* [Github](#https://github.com/) - used as a remote repository.
+* [Heroku](#https://heroku.com) is used to deploy the project
 
 ## UX 
   ### Target Audience
@@ -50,7 +50,7 @@
   * As a user:
 
     * I would like to know how to feed the daily sales data
-    * I would like to know if my datas are valid
+    * I would like to know if my data is valid
     * I would like to know when my input are correctly processed 
     * I would like to have a conformation message if the process went well 
 
@@ -60,11 +60,11 @@
 
    ![Welcoming page](documentation/startingtemple.png)
 
-  ### Feuture Features
-  For the feuture, we will create API between the sales data collecting software and our python program.
+  ### Future Features
+  For the future, we will create API between the sales data collecting software and our python program.
 ## Testing
   ### Manual Testing
-  when a user inputs the sales data with a sting, the data automation raise an error Invalid data, and suggestes to inter the correct numerical figure.
+  when a user inputs the sales data with a string, the data automation raise an error Invalid data, and suggestes to inter the correct numerical figure.
 
   ![String data input](documentation/wrongdatainput2.png)
 
@@ -72,7 +72,7 @@
 
   ![data input without a comma](documentation/wrongdatainput.png) 
 
-  When the user inputs a sales data with the correct sales data, the data automation will confirm the input is valid and sucessfully update both the sales and surplus worksheet.
+  When the user inputs a sales data without separting it by comma, the data automation will confirm the input is valid and sucessfully update both the sales and surplus worksheet.
 
   ![Correct sales data input](documentation/correctdatainput1.png)
  
@@ -84,15 +84,15 @@
 | Userstories | Results |
 |---| ---|
 | I would like to know how to feed the daily sales data| when the user open the data automation, the welcoming message with instraction appear|
-| I would like to know if my datas are valid| if the user input is valid, the data automation will confirm as Data is Valid |
-| I would like to know when my inputs are correctly processed | if the inputes are valid and accepted the data automation will show the worksheet is updated sccessfully and a link to the updated worksheet|
+| I would like to know if my input data is valid| if the user input is valid, the data automation will confirm as Data is Valid |
+| I would like to know when my inputs are correctly processed | if the inputes are valid and accepted, the data automation will show the worksheet is updated sccessfully, provide the link to the worksheet|
   ### Validation
-  * PEP8 validator is used to check the python code is without any error.
+  * PEP8 validator is used to check the python code.
 
   ![PEP8 Result](documentation/pep8.png)
 ## Bugs 
  ### Solved Bugs
- * The data input was accepting a negative figure,this issue fixed by putting a forloop in the validate-data function
+ * The data input was accepting a negative figure,this issue fixed by putting a forloop in my validate-data function
  ### Remaining Bugs
  * No Bugs   
 ## Deployment
@@ -104,7 +104,7 @@
   * Link the Heroku app to the sweet cake for all1 repository
   * click to deploy
 ## Credits
-* Inspiration of the progect Credits to Code Love Sandwitch Project
+* Inspiration of the project Credits to Code Love Sandwich Project
 ### Acknowledgment
 1. To my mentor Mr. Rohit for his continuous support
 2. For all Code Institute student support team 
