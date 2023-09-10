@@ -68,7 +68,7 @@
 
   ![String data input](documentation/wrongdatainput2.png)
 
-  when a user input a sales data with out comma, the data automation will raise an error, to correct the input.
+  when a user input a sales data with comma separation, the data automation will raise an error, to correct the input.
 
   ![data input without a comma](documentation/wrongdatainput.png) 
 
