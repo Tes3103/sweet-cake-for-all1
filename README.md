@@ -2,6 +2,7 @@
 
 * [Sweet Cake For All1](#sweet-cake-for-all1)
 * [How To Use](#how-to-use)
+* [Technologies Used](#technologies-used)
 * [UX](#ux)
 
   * [Target Audience](#target-audience)
@@ -17,8 +18,9 @@
   * [Unsolved Bugs](#unsolved-bugs)
 * [Validator](#validator)
 * [Deployment](#deployment)
-* [Credits](#)
-* [](#)
+* [Credits](#credits)
+* [Acknowledgment](#achknoweledgment)
+
 
 ## Sweet Cake For All1
 
@@ -32,6 +34,15 @@
 
  The user provide sales data from the daily market, this data will be added into asles worksheet and the surplus numbers will be calculated by subtracting the sales from the stock, here the posive number will indicate the cake which is a wastage and the negative number will indicate the additional cake soled for that particular market day with respect to the
 
+## Technologies Used
+* [Python](#https://www.python.org/) - is used to develop the data Automation
+* [Spreedsheets](#https://tinyurl.com/4ju8jju2) - is used to feed all the data
+* [PEP8](#https://pep8ci.herokuapp.com/) - is used to validate the python code
+* [Lucidchart](#https://www.lucidchart.com/pages/how-to-make-a-flowchart) - is used to build a flow chart to show how the overall program is running and used
+* [Codeanywhere](#https://app.codeanywhere.com/)- is used as a local IDE.
+* [Github](#https://github.com/) - used a remote repository.
+* [Heroku](#) is used to deploy the project
+
 ## UX 
   ### Target Audience
   My data automation software is targeted for the Sweet Cake for all cake company, which aims to collect the daily sales data, to calculate and make a stock prediction for the next market.
@@ -39,7 +50,6 @@
   * As a user:
 
     * I would like to know how to feed the daily sales data
-    * I want to have similar data as an example to feed sales data
     * I would like to know if my datas are valid
     * I would like to know when my input are correctly processed 
     * I would like to have a conformation message if the process went well 
@@ -70,14 +80,18 @@
 
   ![Stock calculation](documentation/correctdatainput2.png)
 
+ ### Testing Userstories
+| UserStorues | Results |
+| I would like to know how to feed the daily sales data| when the user open the data automation, the welcoming message with instraction appear|
+| I would like to know if my datas are valid| if the user input is valid, the data automation will confirm as Data is Valid |
+| I would like to know when my inputs are correctly processed | if the inputes are valid and accepted the data automation will show the worksheet is updated sccessfully and a link to the updated worksheet|
   ### Validation
   * PEP8 validator is used to check the python code is without any error.
 
   ![PEP8 Result](documentation/pep8.png)
 ## Bugs 
  ### Solved Bugs
- * The data input was accepting a negative figure, i fix this issue by putting a forloop in the validate-data function
- * 
+ * The data input was accepting a negative figure,this issue fixed by putting a forloop in the validate-data function
  ### Remaining Bugs
  * No Bugs   
 ## Deployment
@@ -89,5 +103,7 @@
   * Link the Heroku app to the sweet cake for all1 repository
   * click to deploy
 ## Credits
-1. To my mentor Mr. Rohit for his continous support
+* Inspiration of the progect Credits to Code Love Sandwitch Project
+### Acknowledgment
+1. To my mentor Mr. Rohit for his continuous support
 2. For all Code Institute student support team 
